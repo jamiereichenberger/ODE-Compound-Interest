@@ -1,5 +1,8 @@
 # ODE-Compound-Interest
 Project 1 - create ODE that generates simple compound interest
+Team 6 - Jamie (Graham) Reichenberger, Tristan Janisse. Natsuki Abe 
+Professor Ricardo Citro – CST305 - MWF 3:20-4:30  
+January 26, 2020 
 
 # Set up instructions:
 ## 1. Install Python 2.7 on computer
@@ -9,12 +12,6 @@ Project 1 - create ODE that generates simple compound interest
 ## 3. Run the command "python " with name of the file in your terminal
 
 ## 4. Input your data... then ejoy the cool 2D visuals!
-
-Team 6 - Jamie (Graham) Reichenberger, Tristan Janisse. Natsuki Abe 
-
-Professor Ricardo Citro – CST305 - MWF 3:20-4:30  
-
-January 26, 2020 
 
  
 
