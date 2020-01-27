@@ -1,23 +1,14 @@
 # ODE-Compound-Interest
 Project 1 - create ODE that generates simple compound interest
 
- 
+# Set up instructions:
+## 1. Install Python 2.7 on computer
 
- 
+## 2. Download Github code into your computer as a python file
 
- 
+## 3. Run the command "python " with name of the file in your terminal
 
- 
-
- 
-
- 
-
- 
-
- 
-
-Project 1 - Visualize ODE with SciPy 
+## 4. Input your data... then ejoy the cool 2D visuals!
 
 Team 6 - Jamie (Graham) Reichenberger, Tristan Janisse. Natsuki Abe 
 
@@ -27,21 +18,9 @@ January 26, 2020
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 Responsibilities/Tasks Completed by Each Member 
 
-     Natsuki Abe took leadership over the code writing, but all members had view and contribution to programming. Tristan Janisse took leadership over mathematical computation, but everyone participated in completing that portion. Jamie Graham took leadership over documentation, but everyone contributed and added to the completed work. It was a solid team effort. 
+Natsuki Abe took leadership over the code writing, but all members had view and contribution to programming. Tristan Janisse took leadership over mathematical computation, but everyone participated in completing that portion. Jamie Graham took leadership over documentation, but everyone contributed and added to the completed work. It was a solid team effort. 
 
 System Performance Context Description 
 
@@ -53,51 +32,51 @@ This project is using an odeint to calculate and visualize the rate of return ba
 
 Mathematical Approach for Solving it 
 
-     The mathematical approach for solving this problem is finding the derivative of the rate of compound interest multiplied by the amount of money over the course of time. This can be written out mathematically as so: 
+The mathematical approach for solving this problem is finding the derivative of the rate of compound interest multiplied by the amount of money over the course of time. This can be written out mathematically as so: 
 
-dS(t)dt=r∗S(t)
+    dS(t)dt=r∗S(t)
  
 
 Where r is equal to rate, S is equal to money, and t is equal to time. 
 
-dSdt=rS
+     dSdt=rS
  
 
-1S dSdt=r
+     1S dSdt=r
  
 
-1S dS=r dt
+     1S dS=r dt
  
 
-∫1S dS= ∫r dt
+    ∫1S dS= ∫r dt
+
+
+    lnS=rt+D
+
+
+    S= ert+D
+
+
+    S=Cert
+
+
+    S(0)=Ce0
+
+
+    S(0)=C
  
 
-lnS=rt+D
- 
+     Since S(0)=S0, we can also say that C=S0 
 
-S= ert+D
- 
 
-S=Cert
- 
-
-S(0)=Ce0
- 
-
-S(0)=C
- 
-
-Since S(0)=S0, we can also say that C=S0 
- 
-
-S(t)= S0ert
+     S(t)= S0ert
  
 
 Approach for Implementation 
 
 One python package that is used in this project is Scipy that has capability for differential equations within odeint. Note, this stands for ordinary differential equation integration. The model keyword represents the return derivative value from requested y and t values within the dy/dt = model relationship (y,t). Y0 represents the initial conditions of differential states. T represents time points where solution should be returned with internal points that are used to maintain accuracy in the calculation.  
 
-Dy(t) / d(t) = r * y(t) 
+     Dy(t) / d(t) = r * y(t) 
 
 Imported as such: 
 
